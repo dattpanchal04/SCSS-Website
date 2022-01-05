@@ -1,5 +1,11 @@
-
 # Website Using SCSS
+
+- Home Page
+
+![Screenshot (125)](https://user-images.githubusercontent.com/94067118/148166746-b6722496-ffa8-4be6-8897-55018dd0205f.png)
+- Contact Page
+
+![Screenshot (126)](https://user-images.githubusercontent.com/94067118/148166757-d386db35-a5e0-44e6-a70a-92124d50c0f3.png)
 
 Hello, This website is purely made from HTML and Syntactically Awesome Style Sheet ( SCSS ) with some bootstrap. SCSS is the more advanced version of CSS. This website is just a template. so, checkout this amazing project and thank you for visit!
 
