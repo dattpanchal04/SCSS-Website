@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  text-transform: capitalize;
+  font-family: system-ui;
+}
+
+.firstSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background: url("/Images/home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-weight: bold;
+}
+
+.firstSec.firstSec #title {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.firstSec.firstSec #para {
+  letter-spacing: 1px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+}
+
+.firstSec.firstSec #para::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.firstSec.firstSec #para::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.card-group {
+  background-color: white;
+  height: 650px;
+  padding: 50px;
+}
+
+.card-group.card-group h2 {
+  font-weight: bold;
+}
+
+.card-group.card-group p::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.card-group.card-group p::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.thirdSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  background: url("/Images/github.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: bold;
+}
+
+.thirdSec.thirdSec #webTitle {
+  color: color2;
+  font-size: 55px;
+}
+
+.thirdSec.thirdSec #webPara {
+  color: gray;
+  font-size: 16px;
+}
+
+.thirdSec.thirdSec #webPara::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.thirdSec.thirdSec #webPara::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.webContents {
+  margin: 40px 30px;
+  font-family: system-ui;
+}
+
+.webContents.webContents #mainDesc::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.webContents.webContents #mainDesc::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.webContents.webContents #siteName a {
+  text-transform: none;
+  color: cornflowerblue;
+  font-size: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+.webContents.webContents #siteName a:hover {
+  color: #102d64;
+  cursor: pointer;
+}
+
+.webContents.webContents #siteDesc {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+
+.webContents.webContents #siteDesc::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.webContents.webContents #siteDesc::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.fifthSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  width: 100%;
+  background: url("/Images/contact.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fifthSec #contactTitle {
+  color: white;
+  font-size: 40px;
+}
+
+.fifthSec #contactPara {
+  text-transform: none;
+  color: gray;
+  font-size: 16px;
+}
+
+.fifthSec #contactPara::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+.fifthSec #contactPara::selection {
+  background-color: yellow;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .card-group {
+    height: auto;
+    padding: 30px 2px;
+  }
+  .thirdSec {
+    height: auto;
+    padding: 30px;
+  }
+  .thirdSec.thirdSec #webTitle {
+    color: color2;
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+// Required Variable
+$width: 100%;
+$color1: white;
+$color2: black;
+$color3: gray;
+$color4: cornflowerblue;
+$color5: rgb(16, 45, 100);
+$selectionColor: yellow;
+$ffamily: system-ui;
+$case: capitalize;
+$weight: bold;
+
+body {
+  height: 100vh;
+  width: $width;
+  text-transform: $case;
+  font-family: $ffamily;
+}
+
+// Mixins
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin transitions {
+  transition: all 0.3s;
+}
+
+@mixin selection {
+  &::selection {
+    background-color: $selectionColor;
+    color: $color2;
+  }
+}
+
+// Style of first section
+.firstSec {
+  @include flexBox();
+  height: 500px;
+  width: $width;
+  background: url('/Images/home.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-weight: $weight;
+
+  &.firstSec #title {
+    color: $color1;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+  &.firstSec #para {
+    letter-spacing: 1px;
+    color: $color1;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+    @include selection();
+  }
+}
+
+// Style of second section
+.card-group {
+  background-color: $color1;
+  height: 650px;
+  padding: 50px;
+
+  &.card-group h2 {
+    font-weight: $weight;
+  }
+  &.card-group p::selection {
+    background-color: $selectionColor;
+    color: $color2;
+  }
+}
+
+// Style of third section
+.thirdSec {
+  @include flexBox();
+  text-align: center;
+  height: 400px;
+  width: $width;
+  background: url("/Images/github.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-weight: $weight;
+
+  &.thirdSec #webTitle {
+    color: color2;
+    font-size: 55px;
+  }
+  &.thirdSec #webPara {
+    color: $color3;
+    font-size: 16px;
+    @include selection();
+  }
+}
+
+// Style of fourth section
+.webContents {
+  margin: 40px 30px;
+  font-family: $ffamily;
+
+  &.webContents #mainDesc::selection {
+    background-color: $selectionColor;
+    color: $color2;
+  }
+
+  &.webContents #siteName a {
+    text-transform: none;
+    color: $color4;
+    font-size: 30px;
+    transition: all 0.3s;
+    font-weight: $weight;
+    margin: 15px 0px;
+
+    &:hover {
+      color: $color5;
+      cursor: pointer;
+    }
+  }
+  &.webContents #siteDesc {
+    margin: 18px 0px;
+    font-size: 18px;
+    @include selection();
+  }
+}
+
+// Style of fifth section
+.fifthSec {
+  @include flexBox();
+  height: 400px;
+  width: $width;
+  background: url("/Images/contact.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-weight: $weight;
+
+  #contactTitle {
+    color: $color1;
+    font-size: 40px;
+  }
+  #contactPara {
+    text-transform: none;
+    color: $color3;
+    font-size: 16px;
+    @include selection();
+  }
+}
+
+// Responsive Code
+@media screen and (max-width: 800px) {
+  .card-group {
+    height: auto;
+    padding: 30px 2px;
+  }
+  .thirdSec {
+    height: auto;
+    padding: 30px;
+
+    &.thirdSec #webTitle {
+      color: color2;
+      font-size: 30px;
+    }
+  }
+}
