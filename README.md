@@ -9,6 +9,7 @@
 
 Hello, This website is purely made from HTML and Syntactically Awesome Style Sheet ( SCSS ) with some bootstrap. SCSS is the more advanced version of CSS. This website is just a template. so, checkout this amazing project and thank you for visit!
 
+See the project online here: https://codelux.surge.sh/
 
 ## Author
 
